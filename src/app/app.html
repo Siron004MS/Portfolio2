@@ -1,0 +1,97 @@
+
+<div class="portfolio" [class.dark-theme]="isDark()" [class.light-theme]="!isDark()">
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <a href="#home" class="brand">
+      MK<span>.</span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button
+      class="theme-toggle"
+      (click)="toggleTheme()"
+      [attr.aria-label]="isDark() ? 'Switch to light theme' : 'Switch to dark theme'">
+      {{ isDark() ? '☀ Light' : '☾ Dark' }}
+    </button>
+  </header>
+
+  <!-- Hero -->
+  <main id="home">
+    <section class="hero">
+
+      <div class="hero-content">
+
+        <div class="availability">
+          <span class="status-dot"></span>
+          SOFTWARE DEVELOPER
+        </div>
+
+        <p class="greeting">Hello, I'm</p>
+
+        <h1>
+          Markdenis<br />
+          <span>Kipngétich.</span>
+        </h1>
+
+        <h2>
+          Building ideas into
+          <span>digital solutions.</span>
+        </h2>
+
+        <p class="hero-description">
+          I am a software developer passionate about building
+          practical, reliable and meaningful software solutions.
+          Welcome to my digital space.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">
+            Explore My Work →
+          </a>
+
+          <a href="#contact" class="btn-secondary">
+            Get In Touch
+          </a>
+        </div>
+
+      </div>
+
+      <div class="hero-visual">
+        <div class="visual-circle">
+          <img src="/logo.png" alt="Markdenis logo" />
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+        </div>
+
+        <div class="floating-tag tag-one">"&lt;Developer /&gt;</div>
+        <div class="floating-tag tag-two">Problem Solver</div>
+      </div>
+
+    </section>
+
+    <!-- Temporary section anchors -->
+    <section id="about" class="next-section">
+      <p>01 / ABOUT</p>
+      <h2>More about me, coming soon.</h2>
+    </section>
+
+    <section id="projects" class="next-section">
+      <p>02 / PROJECTS</p>
+      <h2>Things I've built.</h2>
+    </section>
+
+    <section id="contact" class="next-section">
+      <p>03 / CONTACT</p>
+      <h2>Let's connect.</h2>
+    </section>
+
+  </main>
+
+</div>
